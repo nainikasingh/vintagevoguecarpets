@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css"; 
+
+// .dropdown-menu.show{
+//     display: block !important;
+// }
+
+/* Styles for the header */
+app-header {
+    position: fixed; /* Keep the header fixed */
+    top: 0;         /* Position it at the top */
+    left: 0;        /* Span the full width */
+    width: 100%;
+    z-index: 10;    /* Ensure it's on top of other elements */
+    /* ...other header styles... */ 
+  }
+  
+  /* Add padding to the body to prevent content from being hidden under the header */
+  body {
+    padding-top: 7%; /* Adjust this value to match the height of your header */
+  }
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.navbar-expand-lg .offcanvas {
+    flex-grow: 0 !important;
+}
+
+.navbar > .container-fluid{
+    justify-content: start;
+}

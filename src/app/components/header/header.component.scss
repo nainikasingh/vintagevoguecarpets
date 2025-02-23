@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    position:fixed;
+    z-index: 999;
+    width: 100%;
+}
+header:hover{
+    background: #fff;
+}
+.inner_header.active{
+    background: #fff;
+}
+a {
+    text-decoration: none;
+}
+a .fa {
+    color: black;
+}
+ul a:hover {
+    border-bottom: 2px solid;
+}
+.nav-left img {
+    width: 250px;
+    padding: 10px;
+    padding-left: 20px;
+}
+.nav-right {
+    display: block;
+}
+/* .inner-header {
+    display: block;
+    background: none;
+} */
+.inner-items {
+    padding-top: 25px;
+}
+.inner-header_list {
+    list-style: none;
+    display: flex;
+    padding-left: 25px;
+    column-gap: 25px;
+}
+.inner-item .mainitem {
+    color: black;
+    font-weight: 700;
+}
+.subitems {
+    list-style: none;
+    visibility: hidden;
+    text-align: left;
+    background-color: #f7f6f2;
+    column-gap: 40px;
+}
+.subitems a {
+    color: black;
+}
+.subitems ul {
+    padding: 0;
+    color: #a28b78;
+    width: 200px;
+}
+.dropdown-menu-wide ul {
+    padding: 0;
+    color: #a28b78;
+    width: 200px;
+}
+.subitems li {
+    text-align: left;
+    text-decoration: none;
+    padding: 12px;
+    line-height: 1;
+}
+.inner-header_list .has-subitems:hover .subitems {
+    visibility: visible;
+    padding: 1rem;
+}
+.inner-header img {
+    width: 50%;
+    padding: 1rem;
+    margin-left: 100px;
+    height: 100%;
+}
+ul.subitems {
+    position: absolute;
+}
+.dropdown-menu.show {
+    display: flex;
+    position: absolute;
+    padding: 20px;
+    border-radius: 0px;
+    background-color: #f6f6f6;
+}
+.inner-header .fa {
+    font-size: 25px;
+    padding: 1rem;
+}
+.header .childclass {
+    padding: 0;
+}
+select.form-select {
+    width: 30%;
+    height: 50%;
+    margin-top: 16px;
+}
+
+.dropdown-menu-wide {
+    width: 800px; /* Adjust the width as needed */
+  }
+  
+  .offcanvas {
+    width: 75%; /* Adjust sidebar width as needed */
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-toggler {
+      display: none;
+    }
+  }
+  
+  /* Center the offcanvas title */
+  .offcanvas-header .navbar-brand {
+    margin: 0 auto; /* Center horizontally */
+  }
